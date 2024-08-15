@@ -1,13 +1,9 @@
-import './App.css';
-import logIn from "./logIn";
-import singUP from "./signUp";
+import Login from './Login.js';
 function App() {
   return (
     <div className="App">
-      
-    
+     <Login/>
     </div>
   );
 }
-
 export default App;
