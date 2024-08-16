@@ -3,7 +3,7 @@ export default function Login(){
   function handleSubmit(event){
     event.preventDefault();
     alert("خوش آمدید🌏");
-  }
+   }
     return(
         <div className="flex items-center justify-center h-screen">
          <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray-200 p-4">
