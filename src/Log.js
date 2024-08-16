@@ -10,7 +10,7 @@ export default function Log() {
 
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray  backdrop-blur-md">
+      <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray backdrop-blur-md">
         <div className="px-6 py-4">
           <h2 className="text-lg font-bold ">سلام!</h2>
           <h2 className="text-lg font-bold ">ورود به توربین</h2>
