@@ -1,4 +1,3 @@
-// Login.js
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -27,12 +26,12 @@ export default function Log() {
               className="mt-3 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500"
               placeholder="رمز"
             />
-            <button className="bg-orange-500 hover:bg-orange-700 ransition duration-500 ease-in-out text-white font-bold py-2 px-10 rounded mt-3">
+            <button className="bg-orange-500 hover:bg-orange-700 transition duration-500 ease-in-out text-white font-bold py-2 px-10 rounded mt-3">
               ورود
             </button>
           </form>
-          <p className="font-bold mt-2">
-            هنوز عضو نیستید؟ <Link to="/signup">ثبت نام کنید</Link>
+          <p className="font-bold mt-2 hover:scale-110 transition duration-450">
+  هنوز عضو نیستید؟ <Link to="/signup">ثبت نام کنید</Link>
           </p>
         </div>
       </div>

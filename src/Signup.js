@@ -1,10 +1,9 @@
 
 import React from "react";
-
 export default function Signup() {
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray-200 p-4">
+           <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray backdrop-blur-md">
         <div className="px-6 py-4">
           <h2 className="text-lg font-bold ">ثبت نام در توربین</h2>
           <form>
