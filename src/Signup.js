@@ -88,7 +88,7 @@ export default function Signup() {
             </button>
           </form>
           <p className="font-bold mt-2 hover:scale-110 transition duration-450">
-          <Link to="/">عضو هستید؟ وارد شوید</Link>
+          <Link to="/"> وارد شوید</Link>
           </p>
           </div>
           </div>
