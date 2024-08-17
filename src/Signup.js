@@ -10,9 +10,19 @@ export default function Signup() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("حالا میتونی سفرت رو بسازی🗺");
+    if (password !== confirmPassword) {
+      alert(`${firstName} ${lastName} رمز عبور یکسان نیست!`);
+      return;
+    }
+  
+    const englishRegex = /[a-zA-Z]/;
+    if (englishRegex.test(firstName) || englishRegex.test(lastName)) {
+      alert("لطفا نام و نام خانوادگی را به فارسی وارد کنید");
+      return;
+    }
+  
+    alert(`${firstName} ${lastName} حالا میتونی سفرت رو بسازی🗺`);
   };
-
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="max-w-md mx-auto rounded-xl shadow-lg overflow-hidden md:max-w-2xl bg-gray backdrop-blur-md">
@@ -24,11 +34,12 @@ export default function Signup() {
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="first_name"
                 type="text"
                 value={firstName}
                 onChange={(event) => setFirstName(event.target.value)}
                 placeholder="نام"
+                title="لطفا فقط حروف فارسی وارد کنید"
+                required
               />
             </div>
 
@@ -37,11 +48,12 @@ export default function Signup() {
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="last_name"
                 type="text"
                 value={lastName}
                 onChange={(event) => setLastName(event.target.value)}
                 placeholder="نام خانوادگی"
+                title="لطفا فقط حروف فارسی وارد کنید"
+                required
               />
             </div>
 
@@ -50,11 +62,11 @@ export default function Signup() {
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="password"
                 type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 placeholder="کلمه عبور"
+                required
               />
             </div>
 
@@ -63,14 +75,13 @@ export default function Signup() {
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="confirm_password"
                 type="password"
                 value={confirmPassword}
                 onChange={(event) => setConfirmPassword(event.target.value)}
                 placeholder="تکرار کلمه عبور"
+                required
               />
             </div>
-
             <button
               className="bg-orange-500 hover:bg-orange-700 transition duration-500 ease-in-out text-white font-bold py-2 px-10 rounded mt-3"
               type="submit"
