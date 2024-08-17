@@ -9,7 +9,7 @@ function App() {
     <div className="App w-full h-auto object-cover background-image bg-cover bg-center bg-no-repeat opacity-75">
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<Log />} />
+          <Route path="/Log" exact element={<Log />} />
           <Route path="/signup" exact element={<Signup />} />
         </Routes>
       </BrowserRouter>

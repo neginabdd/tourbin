@@ -30,8 +30,7 @@ export default function Log() {
               ورود
             </button>
           </form>
-          <p className="font-bold mt-2 hover:scale-110 transition duration-450">
-  هنوز عضو نیستید؟ <Link to="/signup">ثبت نام کنید</Link>
+          <p className="font-bold mt-2 hover:scale-110 transition duration-450">هنوز عضو نیستید؟ <Link to="/signup">ثبت نام کنید</Link>
           </p>
         </div>
       </div>
