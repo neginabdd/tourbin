@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function Log() {
   function handleSubmit(event) {
     event.preventDefault();
