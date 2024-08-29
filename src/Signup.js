@@ -19,7 +19,7 @@ export default function Signup() {
       return;
     }
   
-    alert(`${firstName} ${lastName} حالا میتونی سفرت رو بسازی🗺`);
+    alert(`${firstName} د${lastName} حالا میتونی سفرت رو بسازی🗺`);
   };
   return (
     <div className="flex items-center justify-center h-screen">
@@ -59,7 +59,7 @@ export default function Signup() {
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outlinefocus:border-sky-500 focus:ring-sky-500"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
@@ -72,7 +72,7 @@ export default function Signup() {
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="confirm_password">
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-sky-500 focus:ring-sky-500"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="password"
                 value={confirmPassword}
                 onChange={(event) => setConfirmPassword(event.target.value)}
