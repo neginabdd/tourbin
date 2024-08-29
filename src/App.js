@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Log from "./Log"; 
+import Log from './PageLayout/Log'; 
 import './App.css';
-import Signup from "./Signup";
+import Signup from './PageLayout/Signup';
 
 function App() {
   return (

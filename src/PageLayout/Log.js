@@ -14,7 +14,7 @@ export default function Log() {
           <h2 className="text-lg font-bold ">سلام!</h2>
           <h2 className="text-lg font-bold ">ورود به توربین</h2>
           <form onSubmit={handleSubmit}>
-          <EmailInput placeholder="آدرس ایمیل رو وارد کنید" />
+            <label> <EmailInput placeholder="آدرس ایمیل رو وارد کنید" /></label>
             <input
               type="password"
               className="mt-3 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500"
